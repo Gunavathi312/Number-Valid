@@ -1,3 +1,1 @@
-<div>
-<img src='data:image/png;base64, <pega:reference name=".ImageB64Code"/>' />
-</div>
+https://drive.google.com/drive/folders/1acWgLvEFJJNfcBtIsxc6jQ3jIHWkUQ01
