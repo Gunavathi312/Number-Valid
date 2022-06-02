@@ -1,0 +1,23 @@
+
+// Regex to check valid Aadhaar number
+String regex= "^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$";
+
+// Compile the ReGex
+java.util.regex.Pattern p = java.util.regex.Pattern.compile(regex);
+
+// If the string is empty, return false
+if (theValue == null || theValue.trim().equals("")) return false;
+
+//Pattern class contains matcher() method to match the given string and the regular expression
+java.util.regex.Matcher m = p.matcher(theValue);
+
+// Return if the string macthed the ReGex
+if(m.matches())
+return m.matches();
+
+//Invalid message
+else
+{
+ theProperty.addMessage("Invalid Format- Aadhaar number should be 12 Digits number and Should not start with a Number 0 or 1 and Should Contain Space between every four digits");
+ return false;
+}
